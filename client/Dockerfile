@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY package*.json /app
 COPY . /app
-CMD ["npm", "install" , "--force"]
+RUN npm install --force
 
-RUN npm run build
+RUN npm start
