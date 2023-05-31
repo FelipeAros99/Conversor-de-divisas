@@ -5,7 +5,6 @@ WORKDIR /app
 
 COPY package*.json /app
 COPY . /app
-
+CMD ["npm", "install" , "--force"]
 
 RUN npm run build
-CMD ["npm", "install"]
