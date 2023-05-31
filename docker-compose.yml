@@ -1,9 +1,9 @@
 version: "3.4"
 
 x-common-variables: &common-variables
-  MYSQL_USER: sampleuser
-  MYSQL_PASSWORD: samplepassword
-  MYSQL_DATABASE: sampledb
+  MYSQL_USER: devuser
+  MYSQL_PASSWORD: 1234
+  MYSQL_DATABASE: Conversiones
   REACT_APP_SERVER_PORT: 8000
 
 services:
@@ -14,11 +14,13 @@ services:
       <<: *common-variables
       MYSQL_HOST: localhost
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: 1234
     ports:
       - 3306:3306
     restart: unless-stopped
     volumes:
-      - ./db/sample.sql:/docker-entrypoint-initdb.d/sample.sql
+      - ./db/Conversor.sql:/docker-entrypoint-initdb.d/Conversor.sql
   phpmyadmin:
     depends_on:
       - mysql-db
