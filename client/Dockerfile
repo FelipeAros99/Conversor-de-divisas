@@ -7,5 +7,5 @@ COPY package*.json /app
 COPY . /app
 
 
-
+CMD [ "npm", "build"]
 CMD ["npm", "start"]

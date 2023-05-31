@@ -9,5 +9,5 @@ COPY . /app
 
 RUN npm install 
 RUN npm install nodemon --save-dev
-
+RUN Yarn start
 CMD ["npm", "start"]
