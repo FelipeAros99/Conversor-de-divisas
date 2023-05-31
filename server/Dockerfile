@@ -7,7 +7,7 @@ COPY package.json /app
 
 COPY . /app
 RUN npm install --force
-RUN npm install nodemon --save-dev
+RUN npm install nodemon 
 
-RUN npm start
+
 

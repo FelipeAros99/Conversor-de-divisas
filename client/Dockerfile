@@ -7,4 +7,4 @@ COPY package*.json /app
 COPY . /app
 RUN npm install --force
 
-RUN npm start
+
