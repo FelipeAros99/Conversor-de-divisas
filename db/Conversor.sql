@@ -47,7 +47,7 @@ ENGINE = InnoDB;
 
 INSERT INTO `usuario` (`Usu_id`, `Usu_nombre`, `Usu_password`, `Usu_correo`, `Usu_tipo`) VALUES ('1', 'Felipe Aros', 'fbc71ce36cc20790f2eeed2197898e71', 'felipe@felipe.cl', 'user');
 
-INSERT INTO `usuario` (`Usu_id`, `Usu_nombre`, `Usu_password`, `Usu_correo`, `Usu_tipo`) VALUES ('2', 'Rodrigo Recabarren', '81dc9bdb52d04dc20036dbd8313ed055', 'rodrigo@rodrigo.cl', 'admin');
+INSERT INTO `usuario` (`Usu_id`, `Usu_nombre`, `Usu_password`, `Usu_correo`, `Usu_tipo`) VALUES ('2', 'Diego Angulo', '81dc9bdb52d04dc20036dbd8313ed055', 'diego@diego.cl', 'admin');
 
 
 

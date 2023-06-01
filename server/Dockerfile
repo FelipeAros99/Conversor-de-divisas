@@ -6,8 +6,9 @@ WORKDIR /app
 COPY package.json /app
 
 COPY . /app
-RUN npm install --force
 RUN npm install nodemon 
+RUN npm install --force
+
 CMD ["npm", "start"]
 
 
