@@ -40,7 +40,14 @@ const Converter = () => {
     axios
       .get(`https://mindicador.cl/api/uf/` + fecha1Formateada, {})
       .then((response) => {
-        valorMoneda = response.data.serie[0].valor
+        console.log(response)
+
+        if(response.data.serie.length == 0){
+          valorMoneda = 0
+          alert("valor de uf no disponible aun");
+        }else{
+          valorMoneda = response.data.serie[0].valor
+        }
         total = Math.round(valorMoneda * parseFloat(uf))
         setUfPrice(valorMoneda)
         setTotalAmount(total)
