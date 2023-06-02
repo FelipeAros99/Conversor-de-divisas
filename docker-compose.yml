@@ -47,7 +47,7 @@ services:
       - ./server:/app
     links:
       - mysql-db
-    command: node server.js
+    command: npm start
   client:
     build: ./client
     container_name: client_container
