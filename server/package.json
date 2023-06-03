@@ -5,11 +5,14 @@
     "author": "First Last <first.last@example.com>",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "node src/server.js"
+
+
     },
     "dependencies": {
         "cors": "^2.8.5",
-        "express": "^4.16.1",
+        "express": "^4.18.2",
         "mysql": "^2.18.1"
     }
+
 }

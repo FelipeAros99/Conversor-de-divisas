@@ -42,7 +42,7 @@ const Converter = () => {
       .then((response) => {
         console.log(response)
 
-        if(response.data.serie.length == 0){
+        if(response.data.serie.length === 0){
           valorMoneda = 0
           alert("valor de uf no disponible aun");
         }else{

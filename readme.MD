@@ -9,5 +9,5 @@ luego dentro de la carpeta del proyecto se debe ejecutar docker-compose up
 
 y con eso puede probar la app en localhost:3000
 
-Login admin: rodrigo@rodrigo clave: 1234
-Login user: felipe@felipe clave: clave
+Login admin: diego@diego.cl clave: **1234**
+Login user: felipe@felipe.cl clave: clave
