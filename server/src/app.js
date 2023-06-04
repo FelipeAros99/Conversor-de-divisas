@@ -1,14 +1,8 @@
-import express  from "express";
-import morgan from "morgan";
+const express = require('express');
+const morgan = require("morgan");
+const app = express();
 
-const app=express();
+app.use(morgan('dev'));
+app.use(require("./routes/index"));
 
-//Settings
-app.set("port",process.env.REACT_APP_SERVER_PORT)
-
-//middlewares
-app.use(morgan("dev"))
-
-
-
-export default app;
+module.exports = app;

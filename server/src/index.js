@@ -1,7 +1,9 @@
-import app from "./app"
-const main = () => {
-    app.listen(app.get("port"));
-    console.log(`Server on port ${app.get("port")}`);
+const app = require('./app');
+
+async function main(){
+    await app.listen(8000);
+    console.log("Server up");
 }
 
-main
+main();
+
