@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ExportToExcel from './Excel';
 import CurrencyFormat from 'react-currency-format';
 import {useState} from 'react'
@@ -8,13 +8,13 @@ import {useState} from 'react'
 const Result = (props) => {
 
   const [jsonData, setJsonData] = useState([]);
-  const fetchData = () => {
+  useEffect(() => {
     fetch('http://localhost:8000/select')
       .then(response => response.json())
       .then(data => setJsonData(data))
       .catch(error => console.log(error));
-  };
-  fetchData();
+  },[]);
+
 
   
 
