@@ -5,6 +5,7 @@ x-common-variables: &common-variables
   MYSQL_PASSWORD: 1234
   MYSQL_DATABASE: Conversiones
   REACT_APP_SERVER_PORT: 8000
+  salt: saltTest
 
 services:
   mysql-db:
