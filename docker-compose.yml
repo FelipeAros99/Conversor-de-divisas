@@ -48,7 +48,6 @@ services:
       - ./server:/app
     links:
       - mysql-db
-    command: npm start
   client:
     build: ./client
     container_name: client_container
