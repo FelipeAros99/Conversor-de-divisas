@@ -1,7 +1,6 @@
 FROM node:16
 WORKDIR /app
-RUN pwd
-COPY package*.json ./
+COPY package.json /app/
 RUN npm install
-COPY . .
+COPY . /app
 CMD [ "npm", "start" ]
